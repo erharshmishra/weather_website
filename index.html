@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="getData()">
+        <div class="box">
+            <input type="text" onchange="getData()" id="search" value="Gorakhpur">
+            <div>
+                <h1 id="temp">14<sup>o</sup>C</h1>
+                <p style="text-align:center; font-size:30px; color:white"></p>
+                <p class="data">Wind Speed :&nbsp;<span id="ws">20</span></p>
+                <p class="data">Humidity :&nbsp;<span id="hmdty">20</span></p>
+            </div>
+            <div style="display: flex; justify-content:center">
+                <img src="image2.png" alt="cloud" width="290px">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
